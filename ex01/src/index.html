@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/ex01/styles/index.css">
     <title>Gallery's page</title>
 </head>
+
 <body>
-    <a href="/ex01/src/image01.html" target="_blank">
+    <div class="mosaic">
+        <div class="container">
         <img src="/ex01/images/img1.jpg" alt="Marathon" width="200px">
-    </a>
+        <div class="overlay">
+            <h1 id="myBtn">Marathon</h1>
+        </div>
+        </div>
+        <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+           <iframe class="modal-content" id="modal-image" frameborder="0"></iframe>
+            
+        </div>
     <a href="/ex01/src/image02.html" target="_blank">
         <img src="/ex01/images/img2.jpg" alt="Gymnastics" width="200px">
     </a>
@@ -35,5 +47,8 @@
     <a href="/ex01/src/image10.html" target="_blank">
         <img src="/ex01/images/img10.jpg" alt="Cycling" width="200px">
     </a>
+</div>
+<script src="/ex01/scripts/index.js"></script>
 </body>
+
 </html>
