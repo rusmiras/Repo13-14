@@ -1,4 +1,14 @@
-// Get the modal
+
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+function grid() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
